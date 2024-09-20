@@ -3,7 +3,9 @@
     /* color */
     --white-color: #fff;
     --black-color: #000;
-    --different-color: #f0ff22;
+    --bg-different-color: #faa51b;
+    --different-color: #ffdc8a;
+    --main-color:  rgba(35, 38, 51, 1);
 }
 body{
     font-family: "Roboto", sans-serif; /* regular font */
@@ -42,10 +44,10 @@ body{
     font-size: 12px;
 }
 .diff-color{
-    color: var(--different-color);
+    color: var(--bg-different-color);
 }
 .bg-diff-color{
-    color: var(--different-color);
+    color: var(--bg-different-color);
 }
 li{
     list-style: none;
@@ -55,8 +57,8 @@ a{
 }
 
 /* private css */
-/* header */
-/* header body */
+/* start header */
+/* header >> header body */
 .header{
     background-image: url(../assests/images/cover.jpg);
     background-position: center;
@@ -75,7 +77,7 @@ a{
     bottom: 0;
     background-color: rgba(35, 38, 51, 0.9);
 }
-/* nav */
+/* header >> nav */
 .header .links a{
     position: relative;
     overflow: hidden;
@@ -89,7 +91,7 @@ a{
     left: 100%;
     right: 0;
     bottom: 0;
-    background-color: var(--different-color);
+    background-color: var(--bg-different-color);
     height: 2px;
     transition: 0.5s;
 }
@@ -97,15 +99,61 @@ a{
     left: 0;
 }
 .header .links a:hover{
-    color: var(--different-color);
+    color: var(--bg-different-color);
 }
 .header .booking{
     padding: 5px 15px;
-    background-color: var(--different-color);
+    background-color: var(--bg-different-color);
     border-radius: 1px;
-    color: var(--white-color);
+    color: var(--different-color);
 }
 .header .booking:hover{
     background-color: transparent;
-    border: 1px solid var(--different-color);
+    border: 1px solid var(--bg-different-color);
 }
+/* header >> content >> text */
+.header .content .text{
+    position: relative;
+    z-index: 1;
+}
+/* header >> content >> image */
+.header .content .image img{
+    position: relative;
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* end header */
+
+/* start arrow */
+a.arrow{
+    background-color: var(--bg-different-color);
+    padding: 10px 15px;
+    right: 25px;
+    bottom: 25px;
+}
+a.arrow:hover{
+    background-color: transparent;
+    border: 1px solid var(--bg-different-color);
+}
+/* end arrow */
+
+/* start footer */
+.footer{
+    background-color: var(--main-color);
+    padding: 12px 0 0 0;
+}
+.footer .links a{
+    color: var(--white-color);
+    transition: 0.5s;
+}
+.footer .links a:hover{
+    color: var(--bg-different-color);
+}
+/* end footer */
