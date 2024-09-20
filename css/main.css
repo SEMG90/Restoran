@@ -1,0 +1,111 @@
+/* general css */
+:root{
+    /* color */
+    --white-color: #fff;
+    --black-color: #000;
+    --different-color: #f0ff22;
+}
+body{
+    font-family: "Roboto", sans-serif; /* regular font */
+}
+.font-spec{
+    font-family: "Josefin Sans", sans-serif;
+}
+.f-heading-lg{
+    font-size: 50px;
+}
+.f-heading-md{
+    font-size: 45px;
+}
+.f-heading-sm{
+    font-size: 40px;
+}
+.f-text-lg{
+    font-size: 35px;
+}
+.f-text-md{
+    font-size: 30px;
+}
+.f-text-sm{
+    font-size: 25px;
+}
+.f-text-xsm{
+    font-size: 20px;
+}
+.f-text-xxsm{
+    font-size: 18px;
+}
+.f-text-xxxsm{
+    font-size: 15px;
+}
+.f-text-vsm{
+    font-size: 12px;
+}
+.diff-color{
+    color: var(--different-color);
+}
+.bg-diff-color{
+    color: var(--different-color);
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/* private css */
+/* header */
+/* header body */
+.header{
+    background-image: url(../assests/images/cover.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+}
+.header::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(35, 38, 51, 0.9);
+}
+/* nav */
+.header .links a{
+    position: relative;
+    overflow: hidden;
+    color: var(--white-color);
+    transition: 0.5s;
+}
+.header .links a::before{
+    position: absolute;
+    content: "";
+    top: 22px;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    background-color: var(--different-color);
+    height: 2px;
+    transition: 0.5s;
+}
+.header .links a:hover::before{
+    left: 0;
+}
+.header .links a:hover{
+    color: var(--different-color);
+}
+.header .booking{
+    padding: 5px 15px;
+    background-color: var(--different-color);
+    border-radius: 1px;
+    color: var(--white-color);
+}
+.header .booking:hover{
+    background-color: transparent;
+    border: 1px solid var(--different-color);
+}
