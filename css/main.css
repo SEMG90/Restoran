@@ -10,6 +10,9 @@
 body{
     font-family: "Roboto", sans-serif; /* regular font */
 }
+section{
+    padding: 50px 0;
+}
 .font-spec{
     font-family: "Josefin Sans", sans-serif;
 }
