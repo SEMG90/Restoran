@@ -16,6 +16,9 @@ section{
 .font-spec{
     font-family: "Josefin Sans", sans-serif;
 }
+.font-spec-tlt{
+    font-family: "Dancing Script", cursive;
+}
 .f-heading-lg{
     font-size: 50px;
 }
@@ -51,6 +54,17 @@ section{
 }
 .bg-diff-color{
     color: var(--bg-different-color);
+}
+.booking{
+    padding: 5px 15px;
+    background-color: var(--bg-different-color);
+    border-radius: 1px;
+    border: 1px solid var(--bg-different-color);
+    color: var(--different-color);
+}
+.booking:hover{
+    background-color: transparent;
+    border: 1px solid var(--bg-different-color);
 }
 li{
     list-style: none;
@@ -104,16 +118,6 @@ a{
 .header .links a:hover{
     color: var(--bg-different-color);
 }
-.header .booking{
-    padding: 5px 15px;
-    background-color: var(--bg-different-color);
-    border-radius: 1px;
-    color: var(--different-color);
-}
-.header .booking:hover{
-    background-color: transparent;
-    border: 1px solid var(--bg-different-color);
-}
 /* header >> content >> text */
 .header .content .text{
     position: relative;
@@ -146,6 +150,127 @@ a.arrow:hover{
     border: 1px solid var(--bg-different-color);
 }
 /* end arrow */
+
+/* start service */
+/* start service >> service-item */
+.service .service-item .serv:hover{ 
+    background-color: var(--bg-different-color);
+    color: var(--white-color);
+    box-shadow: 0px 0px 15px 1px rgba(0,0,0,0.2);
+}
+.service .service-item .serv svg{
+    color: var(--bg-different-color);
+}
+.service .service-item .serv:hover svg{ 
+    color: var(--white-color);
+}
+/* end service */
+
+/* start about */
+/* about >> about-gallery */
+.about .about-gallery{
+    display: grid;
+    grid-template-areas: 
+        "item1 .."
+        "item1 item2"
+        "item3 item4"
+        ".. item4"
+    ;
+    height: 100vh;
+    gap: 10px;
+}
+.about .about-gallery div{
+    background-position: cover;
+    background-position: center;
+}
+.about .about-gallery .item1{
+    background-image: url('../assests/images/restoran-2.jpg');
+    grid-area: item1;
+}
+.about .about-gallery .item2{
+    background-image: url('../assests/images/restoran-3.jpg');
+    grid-area: item2;
+    margin: 0 0 10px 0;
+}
+.about .about-gallery .item3{
+    background-image: url('../assests/images/restoran-4.jpg');
+    grid-area: item3;
+    margin: 10px 0 0 0;
+}
+.about .about-gallery .item4{
+    background-image: url('../assests/images/restoran-5.jpg');
+    grid-area: item4;
+}
+/* about >> about-text */
+/* about >> about-text >> top */
+.about .about-text .top h6{
+    position: relative;
+    overflow: hidden;
+}
+.about .about-text .top h6::before{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 70px;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    background-color: var(--bg-different-color);
+}
+/* about >> about-text >> down */
+.about .about-text .down h1{
+    position: relative;
+    overflow: hidden;
+    color: var(--bg-different-color);
+    padding: 0 20px 0 18px;
+}
+.about .about-text .down h1::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100px;
+    width: 5px;
+    background-color: var(--bg-different-color);
+}
+/* end about */
+
+/* start popular */
+.popular h6{
+    position: relative;
+    overflow: hidden;
+    background-color: var(--white-color);
+}
+.popular h6::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 125px;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    margin: auto;
+    z-index: 1;
+    background-color: var(--bg-different-color);
+}
+.popular h6::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 125px;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    margin: auto;
+    z-index: 1;
+    background-color: var(--bg-different-color);
+}
+/* end popular */
 
 /* start footer */
 .footer{
