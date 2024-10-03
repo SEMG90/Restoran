@@ -270,15 +270,6 @@ a.arrow:hover{
     z-index: 1;
     background-color: var(--bg-different-color);
 }
-/* popular >> navitem */
-.popular li.navitem .nav-link{
-    box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
-}
-.popular li.navitem .nav-link:active,
-.popular li.navitem .nav-link:focus,
-.popular li.navitem .nav-link:hover{
-    box-shadow: 0 1px 0 0 var(--bg-different-color);
-}
 /* popular >> side */
 .popular .side .img-small{
     width: 50px;
@@ -292,7 +283,10 @@ a.arrow:hover{
     position: relative;   
     margin: 0 auto;
 }
-.tab label {
+.popular .tab input{
+    box-shadow: 0 1px 0 0 rgba(0,0,0,0.1);
+}
+.popular .tab label {
 	position: relative;
     padding: 0 40px;
 	top: 0;
@@ -300,12 +294,12 @@ a.arrow:hover{
 	color: #333;
     text-transform: uppercase;
 }
-.tab [type=radio] {
+.popular .tab [type=radio] {
 	display: none;   
 }
-.tab__content {
+.popular .tab__content {
     position: relative;
-	top: 100px;
+	top: 65px;
 	left: 0;
 	right: 0;
 	bottom: 0;
