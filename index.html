@@ -28,6 +28,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
 
+    <!-- jquery -->
+    <link rel="stylesheet" href="css/jquery-ui.css">
+
     <!-- font awesome css -->
     <link rel="stylesheet" href="css/all.min.css" />
 
@@ -233,7 +236,303 @@
           <h6 class="text-center diff-color font-spec-tlt h5">Food Menu</h6>
           <h2 class="text-center font-spec">Most Popular Items</h2>
 
-          <!-- most popular -->
+          <div data-tabs class="tabs d-flex justify-content-center">    
+            <!-- breakfast tab -->
+            <div class="tab">
+               <input type="radio" name="tabgroup" id="tab-1" checked>
+               <label for="tab-1" class="nav-link text-black d-flex align-items-center">
+                  <span class="fa-solid fa-mug-saucer d-block h2 px-2 diff-color"></span>
+                  <h6 class="f-text-vsm text-start">
+                    <span class="d-block">Popular</span>
+                    <span class="d-block f-text-xxxsm fw-bold">Breakfast</span>
+                  </h6>
+               </label>
+               <div class="tab__content d-flex justify-content-between">
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+               </div> 
+            </div>
+
+            <!-- launch tab -->
+            <div class="tab">
+               <input type="radio" name="tabgroup" id="tab-2">
+               <label for="tab-2" class="nav-link text-black d-flex align-items-center">
+                  <span class="fa-solid fa-burger d-block h2 px-2 diff-color"></span>
+                  <h6 class="f-text-vsm text-start">
+                    <span class="d-block">Spacial</span>
+                    <span class="d-block f-text-xxxsm fw-bold">Launch</span>
+                  </h6>
+               </label>
+               <div class="tab__content d-flex justify-content-between">
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+               </div> 
+            </div>
+
+            <!-- dinner tab -->
+            <div class="tab">
+               <input type="radio" name="tabgroup" id="tab-3">
+               <label for="tab-3" class="nav-link text-black d-flex align-items-center">
+                  <span class="fa-solid fa-champagne-glasses d-block h2 px-2 diff-color"></span>
+                  <h6 class="f-text-vsm text-start">
+                    <span class="d-block">Lovely</span>
+                    <span class="d-block f-text-xxxsm fw-bold">Dinner</span>
+                  </h6>
+               </label>
+               <div class="tab__content d-flex justify-content-between">
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="side col-12 col-lg-6">
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/crispy-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/fried-chicken-burger.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <img src="assests/images/kfc-burger-sandwich.jpg" alt="fried-chicken-burger" class="d-block img-fluid img-small">
+                    <div class="content pt-3 ps-4">
+                      <span class="d-block d-flex align-items-center justify-content-between">
+                        <h6 class="fw-bold">Chicken Burger</h6>
+                        <h6 class="diff-color">$ 115</h6>
+                      </span>
+                      <p class="f-text-vsm pt-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit, excepturi!</p>
+                    </div>
+                  </li>
+                </ul>
+               </div> 
+            </div>
+          </div>
+
+          <!-- most popular 
           <div class="most-popular">
             <ul class="nav navtab justify-content-center" id="myTab" role="tablist">
               <li class="nav-item navitem" role="presentation">
@@ -524,7 +823,8 @@
                 </ul>
               </div>
             </div>
-          </div>
+          </div>-->
+
         </div>
       </div>
      </section>
@@ -559,10 +859,17 @@
     <!-- end footer -->
 
     <!-- script js -->
+    <!-- jquery ui -->
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+
     <!-- awesome js -->
     <script src="js/all.min.js"></script>
 
     <!-- boostrap js -->
     <script src="js/bootstrap.min.js"></script>
+
+    <!-- main js -->
+     <script src="js/main.js"></script>
   </body>
 </html>
