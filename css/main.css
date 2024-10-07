@@ -316,6 +316,38 @@ a.arrow:hover{
 }
 /* end popular */
 
+/* start form */
+.form{
+    background-color: var(--main-color);
+}
+/* start form >> form-box */
+.form .form-box .form-vidoe iframe{
+    width: 100%;
+    height: 400px;
+}
+.form .form-box .form-inputs h6:first-child{
+    position: relative;
+    overflow: hidden;
+}
+.form  .form-box .form-inputs h6:first-child::after{
+    position: absolute;
+    content: "";
+    top: 10px;
+    left: 90px;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    width: 30px;
+    background-color: var(--bg-different-color);
+}
+/* end form */
+
+/* start master-cheifs */
+.master-cheifs .blocks .block:hover{
+    box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.1);
+}
+/* end master-cheifs */
+
 /* start footer */
 .footer{
     background-color: var(--main-color);
