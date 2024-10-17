@@ -53,7 +53,7 @@ section{
     color: var(--bg-different-color);
 }
 .bg-diff-color{
-    color: var(--bg-different-color);
+    background-color: var(--bg-different-color);
 }
 .booking{
     padding: 5px 15px;
@@ -343,9 +343,30 @@ a.arrow:hover{
 /* end form */
 
 /* start master-cheifs */
-.master-cheifs .blocks .block:hover{
+.master-cheifs .blocks .block{
+    height: 85%;
+    transition: 0.5s;
     box-shadow: 1px 1px 15px 2px rgba(0,0,0,0.1);
 }
+.master-cheifs .blocks .block:hover{
+    height: 98%;
+}
+.master-cheifs .blocks .block img{
+    transform: scale(0.9.0.9);
+    transition: 0.5s;
+}
+.master-cheifs .blocks .block:hover img{
+    transform: scale(1.1);
+}.master-cheifs .blocks .block .socials a{
+    color: var(--white-color);
+}
+.master-cheifs .blocks .block .socials svg{
+    background-color: var(--bg-different-color);
+}
+.master-cheifs .blocks .block .socials svg:hover{
+    background-color: var(--different-color);
+}
+
 /* end master-cheifs */
 
 /* start footer */
